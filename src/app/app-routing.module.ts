@@ -16,7 +16,8 @@ const routes: Routes = [
     path: 'detail/:id',
     loadChildren: () =>
       import('./screens/detail/detail.module').then((m) => m.DetailPageModule),
-  },  {
+  },
+  {
     path: 'pruebas',
     loadChildren: () => import('./pruebas/pruebas.module').then( m => m.PruebasPageModule)
   },
@@ -24,6 +25,23 @@ const routes: Routes = [
     path: 'conversation',
     loadChildren: () => import('./conversation/conversation.module').then( m => m.ConversationPageModule)
   },
+  {
+    path: 'newdetail',
+    loadChildren: () => import('./newdetail/newdetail.module').then( m => m.NewdetailPageModule)
+  },
+  {
+    path: 'mpage',
+    loadChildren: () => import('./mpage/mpage.module').then( m => m.MpagePageModule)
+  },
+  {
+    path: 'loginnew',
+    loadChildren: () => import('./loginnew/loginnew.module').then( m => m.LoginnewPageModule)
+  },
+  {
+    path: 'bienvenida',
+    loadChildren: () => import('./bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+  },
+
 
 ];
 

@@ -1,0 +1,84 @@
+
+<ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>mpage</ion-title>
+        </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+ <ion-content>
+   <div class="menu-header-big">
+
+   </div>
+   <div class="header-content">
+     <img src="../../assets/images/myappicon.png" alt="">
+       <ion-label>
+         <h2>Nombre de la App</h2>
+         <p>Description App</p>
+       </ion-label>
+
+   </div>
+
+   <div class="action-button">
+     <ion-button>
+       <ion-icon name="add"></ion-icon>
+       Add Something
+     </ion-button>
+   </div>
+
+   <ion-list class="menu-items"lines="none">
+    <ion-item class="active">
+      <ion-icon  name="grid-outline" ></ion-icon>
+      <ion-label>Dashboard</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="pulse-outline"></ion-icon>
+      <ion-label>Live</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="document-text-outline"></ion-icon>
+    <ion-label>Messages</ion-label>
+</ion-item>
+<ion-item>
+  <ion-icon name="person-outline"></ion-icon>
+  <ion-label>Profile</ion-label>
+</ion-item>
+<ion-item>
+  <ion-icon name="library-outline"></ion-icon>
+  <ion-label>Library</ion-label>
+</ion-item>
+<ion-item>
+  <ion-icon name="log-out-outline"></ion-icon>
+  <ion-label>Sign out</ion-label>
+</ion-item>
+  </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<!-- END MENU -->
+  <!-- <ion-buttons slot="endstart">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-menu side="end" menu-id="second" content-id="main2">
+    <ion-content>
+      <ion-list>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu> -->
+
+
+<ion-content id="main">
+  <ion-button expand="block" (click)="openCustom()">Open Menu Custom</ion-button>
+
+  <!-- END BUTTON -->
+  <ion-button expand="block" (click)="openEnd()">Open Menu End</ion-button>
+</ion-content>
